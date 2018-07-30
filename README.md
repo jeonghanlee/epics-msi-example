@@ -52,3 +52,6 @@ CLEAN="make -C $(kernel_source_dir,undefined) M=$(dkms_tree,undefined)/$(PACKAGE
 
 
 ```
+
+## Notice
+msi will replace $(A) or ${A} with $(A,undefined). So in the case we would like to keep $(A) in an output, we cannot use msi
